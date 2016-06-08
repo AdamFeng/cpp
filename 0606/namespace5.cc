@@ -23,6 +23,7 @@ namespace A
 	void displayA()
 	{
 		cout<<"displayA中的num="<<num<<endl;
+		//就近原则，屏蔽其他num
 		cout<<"A::num="<<A::num<<endl;
 		cout<<"b::num="<<B::num<<endl;
 		cout<<"外部变量中的num="<<::num<<endl;
@@ -31,6 +32,8 @@ namespace A
 	}
 }
 
+//命名空间中的函数的定义和实现可以分开进行
+//可以随时向命名空间中添加变量、函数
 namespace B
 {
 	void displayB()

@@ -6,7 +6,10 @@
  
 #include <iostream>
 
-using namespace std;//编译指令
+//using namespace std;//编译指令
+using std::cout;//using声明机制
+using std::endl;
+
 
 namespace wd
 {
